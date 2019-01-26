@@ -1,3 +1,4 @@
+
 import unittest
 import read, copy
 from logical_classes import *
@@ -20,13 +21,15 @@ class KBTest(unittest.TestCase):
         print(' Asking if', ask1)
         answer = self.KB.kb_ask(ask1)
         self.assertEqual(answer[0].bindings, [])
-        #self.assertEqual(answer.list_of_bindings[0][1][0], ask1)
+        # self.assertEqual(answer.list_of_bindings[0][1][0], ask1) #what does this mean? 
+ 
 
     def test2(self):
         ask1 = read.parse_input("fact: (color littlebox red)")
         print(' Asking if', ask1)
         answer = self.KB.kb_ask(ask1)
         self.assertFalse(answer)
+
 
     def test3(self):
         ask1 = read.parse_input("fact: (color ?X red)")
@@ -57,3 +60,4 @@ class KBTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

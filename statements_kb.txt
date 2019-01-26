@@ -27,7 +27,6 @@ fact: (color pyramid3 red)
 fact: (inst pyramid4 pyramid)
 fact: (size pyramid4 big)
 fact: (color pyramid4 red)
-
 fact: (inst cube1 cube)
 fact: (inst cube2 cube)
 fact: (inst cube3 cube)
